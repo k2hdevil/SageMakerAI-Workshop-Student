@@ -9,6 +9,7 @@
 
 ## 데이터셋
 - `dataset/data.csv` — UCI *Predict Students' Dropout and Academic Success* (세미콜론 구분)
+- 출처: https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success
 - 4,424행 × 37열 (36 피처 + `Target`)
 - `Target`: `Graduate`(≈50%) / `Dropout`(≈32%) / `Enrolled`(≈18%) — **클래스 불균형** 존재
 
