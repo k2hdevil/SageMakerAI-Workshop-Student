@@ -83,3 +83,9 @@ python3 _build/validate.py  # 문법/빈칸 검증
 - **`AccessDenied` (S3/SageMaker)**: 실행 역할 권한을 확인하세요.
 - **엔드포인트 호출 실패**: Endpoint가 `InService` 인지, 리전/자격증명이 맞는지 확인하세요.
 - **입력 피처 순서 오류**: 빌트인 XGBoost는 학습 시와 **동일한 열 순서·헤더 없음·라벨 맨 앞** 규칙을 지켜야 합니다.
+
+
+---
+
+## 제작 정보
+본 워크샵은 [Kiro](https://kiro.dev)로 생성했으며, Kevin Kim(hyoungku@amazon.com)이 검수했습니다.
