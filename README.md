@@ -9,7 +9,7 @@
 
 ## 데이터셋
 - `dataset/data.csv` — UCI *Predict Students' Dropout and Academic Success* (세미콜론 구분)
-- 출처: https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success
+  - 출처: https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success
 - 4,424행 × 37열 (36 피처 + `Target`)
 - `Target`: `Graduate`(≈50%) / `Dropout`(≈32%) / `Enrolled`(≈18%) — **클래스 불균형** 존재
 
@@ -88,4 +88,4 @@ python3 _build/validate.py  # 문법/빈칸 검증
 ---
 
 ## 제작 정보
-본 워크샵은 [Kiro](https://kiro.dev)로 생성했으며, Kevin Kim(hyoungku@amazon.com)이 검수했습니다.
+본 워크샵은 [Kiro](https://kiro.dev)로 생성하였으며, HITL을 통해서 컨텐츠의 정확성을 검수했습니다.
