@@ -16,7 +16,7 @@
 1. SageMaker **Processing Job**으로 데이터 전처리 파이프라인을 구성할 수 있다
 2. **빌트인 XGBoost 알고리즘으로 학습** 작업을 실행하고 CloudWatch Logs에서 학습 곡선을 확인할 수 있다
 3. **Batch Transform**으로 대량 오프라인 추론을 수행하고 confusion matrix / macro-F1 등으로 **모델을 평가**할 수 있다
-4. **Automatic Model Tuning(Hyperparameter Optimization)**으로 하이퍼파라미터를 베이지안 **최적화**할 수 있다
+4. **Automatic Model Tuning(Hyperparameter Optimization)** 으로 하이퍼파라미터를 베이지안 **최적화**할 수 있다
 5. 학습된 모델을 **실시간 엔드포인트**로 배포하고 boto3/SDK로 호출할 수 있다
 6. 배포된 엔드포인트를 **Gradio 웹앱**으로 감싸 데모를 만들 수 있다
 7. 워크샵 종료 후 모든 리소스를 **체계적으로 정리**할 수 있다
