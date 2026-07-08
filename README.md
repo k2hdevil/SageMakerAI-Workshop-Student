@@ -92,7 +92,7 @@ SageMakerWorkshop/
 
 ## ⚠️ 비용 & 리소스 정리
 - **실시간 엔드포인트는 삭제 전까지 시간당 과금**됩니다.
-- `06` 또는 `07` 의 **정리(cleanup) 셀**을 반드시 실행해 Endpoint / Endpoint config / Model 을 삭제하세요.
+- `08_cleanup.ipynb` 를 반드시 실행해 Endpoint / Endpoint config / Model 을 삭제하세요.
 - 실습 후 SageMaker 콘솔의 **Endpoints / Models / Endpoint configurations** 에 남은 리소스가 없는지 확인하세요.
 
 ## 선택 과제: 웹 애플리케이션 (Gradio)
