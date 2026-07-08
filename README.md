@@ -85,7 +85,7 @@ SageMakerWorkshop/
 | 04 | `04_tuning.ipynb` | 튜닝 | Automatic Model Tuning (Hyperparameter Optimization) | 50분 |
 | 05 | `05_deployment.ipynb` | 배포 | 실시간 Endpoint | 20분 |
 | 06 | `06_inference.ipynb` | 추론 | Endpoint 호출 (SDK/boto3) | 20분 |
-| 07 | `07_web_app.ipynb` | (선택) 웹앱 | Gradio (노트북 내 실행, share=True) | 30분 |
+| 07 | `07_web_app.ipynb` | (선택) 웹앱 | Gradio (노트북 내 실행, 공개 URL로 액세스) | 30분 |
 | 08 | `08_cleanup.ipynb` | 리소스 정리 | Endpoint·Model·S3 전체 삭제 | 10분 |
 
 난이도는 뒤로 갈수록 스캐폴딩을 줄였습니다. `06`, `07` 은 힌트만 주는 **개방형**입니다.
