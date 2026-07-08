@@ -99,7 +99,7 @@ SageMakerWorkshop/
 `07_web_app.ipynb` 에서 **Gradio**로 웹 UI를 만들어 노트북 셀에서 바로 실행합니다.
 `share=True` 옵션으로 공개 URL이 자동 생성되어 별도 포트/프록시/방화벽 설정 없이 브라우저로 접속할 수 있습니다.
 
-![Gradio 웹앱 스크린샷](assets/gradio_app_screenshot.png)
+![Gradio 웹앱 스크린샷](assets/WebAppScreenShot.png)
 
 ## 노트북 재생성 (유지보수용)
 참가자용/정답용 노트북은 단일 소스 `_build/gen.py` 에서 생성됩니다. 내용을 수정하려면
