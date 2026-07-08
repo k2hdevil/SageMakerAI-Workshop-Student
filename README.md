@@ -119,4 +119,4 @@ python3 _build/validate.py  # 문법/빈칸 검증
 ---
 
 ## 제작 정보
-본 워크샵은 [Kiro](https://kiro.dev) 👻로 생성하였으며, HITL을 통해서 컨텐츠의 정확성을 검수했습니다.
+본 워크샵은 <img src="assets/kiro.svg" width="20" height="20"> [Kiro](https://kiro.dev)로 생성하였으며, HITL을 통해서 컨텐츠의 정확성을 검수했습니다.
