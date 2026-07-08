@@ -22,19 +22,8 @@
 7. 워크샵 종료 후 모든 리소스를 **체계적으로 정리**할 수 있다
 
 ## 소요 시간
-| 구간 | 예상 시간 |
-|------|-----------|
-| 01 전처리 | 20분 |
-| 02 학습 | 15분 (학습 작업 대기 포함) |
-| 03 평가 | 15분 (배치 변환 대기 포함) |
-| 04 튜닝 | 25분 (HPO 대기 포함) |
-| 05 배포 | 10분 |
-| 06 추론 | 10분 |
-| 07 웹앱 (선택) | 15분 |
-| 08 리소스 정리 | 5분 |
-| **합계** | **약 2시간** (선택 과제 포함 2시간 15분) |
 
-> 학습/배치/배포 작업 대기 시간이 포함됩니다. 실제 코딩 시간은 약 1시간입니다.
+총 **약 4시간** (선택 과제 포함 4시간 30분). 학습/배치/배포 작업 대기 시간과 수강생의 코드 작성 시간이 포함됩니다.
 
 ## 워크플로우 아키텍처
 ```
@@ -88,16 +77,16 @@ SageMakerWorkshop/
 > 노트북 작업 디렉토리는 `notebooks/`이므로 데이터 상대경로는 `../dataset/data.csv` 입니다.
 
 ## 노트북 순서
-| # | 노트북 | 단계 | SageMaker 기능 |
-|---|--------|------|----------------|
-| 01 | `01_preprocessing.ipynb` | 환경설정·EDA·전처리 | Processing Job (SKLearnProcessor) |
-| 02 | `02_training.ipynb` | 모델 학습 | Training Job (빌트인 XGBoost) |
-| 03 | `03_evaluation.ipynb` | 평가 | Batch Transform + 지표 |
-| 04 | `04_tuning.ipynb` | 튜닝 | Automatic Model Tuning (HPO) |
-| 05 | `05_deployment.ipynb` | 배포 | 실시간 Endpoint |
-| 06 | `06_inference.ipynb` | 추론·정리 | Endpoint 호출 (SDK/boto3) + Cleanup |
-| 07 | `07_web_app.ipynb` | (선택) 웹앱 | Gradio (노트북 내 실행, share=True) |
-| 08 | `08_cleanup.ipynb` | 리소스 정리 | Endpoint·Model·S3 전체 삭제 |
+| # | 노트북 | 단계 | SageMaker 기능 | 소요 시간 |
+|---|--------|------|----------------|-----------|
+| 01 | `01_preprocessing.ipynb` | 환경설정·EDA·전처리 | Processing Job (SKLearnProcessor) | 40분 |
+| 02 | `02_training.ipynb` | 모델 학습 | Training Job (빌트인 XGBoost) | 30분 |
+| 03 | `03_evaluation.ipynb` | 평가 | Batch Transform + 지표 | 30분 |
+| 04 | `04_tuning.ipynb` | 튜닝 | Automatic Model Tuning (HPO) | 50분 |
+| 05 | `05_deployment.ipynb` | 배포 | 실시간 Endpoint | 20분 |
+| 06 | `06_inference.ipynb` | 추론 | Endpoint 호출 (SDK/boto3) | 20분 |
+| 07 | `07_web_app.ipynb` | (선택) 웹앱 | Gradio (노트북 내 실행, share=True) | 30분 |
+| 08 | `08_cleanup.ipynb` | 리소스 정리 | Endpoint·Model·S3 전체 삭제 | 10분 |
 
 난이도는 뒤로 갈수록 스캐폴딩을 줄였습니다. `06`, `07` 은 힌트만 주는 **개방형**입니다.
 
@@ -109,6 +98,8 @@ SageMakerWorkshop/
 ## 선택 과제: 웹 애플리케이션 (Gradio)
 `07_web_app.ipynb` 에서 **Gradio**로 웹 UI를 만들어 노트북 셀에서 바로 실행합니다.
 `share=True` 옵션으로 공개 URL이 자동 생성되어 별도 포트/프록시/방화벽 설정 없이 브라우저로 접속할 수 있습니다.
+
+![Gradio 웹앱 스크린샷](assets/gradio_app_screenshot.png)
 
 ## 노트북 재생성 (유지보수용)
 참가자용/정답용 노트북은 단일 소스 `_build/gen.py` 에서 생성됩니다. 내용을 수정하려면
